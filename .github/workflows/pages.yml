@@ -15,10 +15,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v3   # 新增，配置 Pages 环境
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2  # 更新成 v2
         with:
-          path: Skywalker-Design   # 指定你的网页文件夹名
+          path: Skywalker-Design  # 这里是你的网页文件夹
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2   # 更新成 v2
