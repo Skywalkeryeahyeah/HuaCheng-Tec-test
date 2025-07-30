@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuaCheng-Tec.com</title>
+    <link rel="stylesheet" href="HuaCheng-Tec-test.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">⚡</span>
+            <span>HuaCheng-Tec</span>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-link">产品</a>
+            <li class="nav-item-more">
+                <a href="#" class="nav-link" id="moreBtn">订阅<span class="arrow">⮟</span></a>
+                <div class="mega-panel" id="megaPanel">
+                    <div class="mega-inner">
+                        <section class="mega-left">
+                            <h3>订阅栏目</h3>
+                            <p>我们的产品可以根据您的需求个性化定制，企业合作与个人年费会员均有额外优惠</p>
+                            <a href="#">了解更多 →</a>
+                        </section>
+
+                        <section class="mega-center">
+                            <img src="HuaCheng-Tec-test-pic_3.jpg" alt="企业照片">
+                        </section>
+
+                        <section class="mega-right">
+                            <h4 class="h4">快速入口</h4>
+                            <ul>
+                                <li><a href="#">企业合作</a></li>
+                                <li><a href="#">个人会员</a></li>
+                                <li><a href="#">优惠政策</a></li>
+                                <li><a href="#">法律条款</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <a href="#" class="nav-link">项目</a>
+            <!-- 1. 在 .nav-links 的最后一个 a 后面加 -->
+            <li class="nav-item-more">
+                <a href="#" class="nav-link" id="moreBtn">企业<span class="arrow">⮟</span></a>
+                <div class="mega-panel" id="megaPanel">
+                    <div class="mega-inner">
+                        <section class="mega-left">
+                            <h3>企业介绍</h3>
+                            <p>HuaCheng-Tec 是世界领先的体育全频道集成平台，拥有独家赛事直播、最具影响力论坛与 AI 健身专家</p>
+                            <a href="#">了解更多 →</a>
+                        </section>
+
+                        <section class="mega-center">
+                            <img src="HuaCheng-Tec-test-pic_1.jpg" alt="企业照片">
+                        </section>
+
+                        <section class="mega-right">
+                            <h4 class="h4">快速入口</h4>
+                            <ul>
+                                <li><a href="#">企业地址</a></li>
+                                <li><a href="#">企业文化</a></li>
+                                <li><a href="#">假期团建</a></li>
+                                <li><a href="#">海外市场</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <a href="#" class="nav-link">更多</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- 滑动板块 -->
+        <div class="slider-container">
+            <div class="slider" id="hero-slider">
+                <div class="slide">
+                    <h2>大型体育全频道集成平台</h2>
+                    <p>赛事频道涵盖72个国家，全球影响力最大论坛，体育装备官方合作伙伴，您的人工智能健身指导专家，运动种类全覆盖。</p>
+                    <button class="cta-button">点击此处了解更多</button>
+                </div>
+                <div class="slide">
+                    <h2>Integrated Large-Scale All-Sports Channel Platform</h2>
+                    <p>Event channels covering 72 countries, the world's most influential forum, official partner of
+                        sports equipment, every sport fully covered, your AI fitness coach.</p>
+                    <button class="cta-button">Click here to learn more</button>
+                </div>
+                <div class="slide">
+                    <h2>Plataforma Integrada de Canales Deportivos a Gran Escala</h2>
+                    <p>Canales de eventos que abarcan 72 países, el foro de mayor influencia a nivel mundial, socio
+                        oficial de equipamiento deportivo, tu entrenador de fitness con inteligencia artificial y
+                        cobertura total de todos los deportes.</p>
+                    <button class="cta-button">Haz clic aquí para saber más</button>
+                </div>
+            </div>
+            <button class="slider-arrow prev" onclick="changeSlide(-1)">‹</button>
+            <button class="slider-arrow next" onclick="changeSlide(1)">›</button>
+            <div class="slider-nav">
+                <div class="slider-dot active" onclick="goToSlide(0)"></div>
+                <div class="slider-dot" onclick="goToSlide(1)"></div>
+                <div class="slider-dot" onclick="goToSlide(2)"></div>
+            </div>
+        </div>
+
+        <!-- 带动画的八个板块产品介绍 -->
+        <section class="product-intro">
+            <div class="product-card" data-url="#compute">
+                <div class="product-icon">🚀</div>
+                <h3>微秒级低延迟</h3>
+                <p>基于最新 CPU/GPU 架构，与 6G/5GA 同步, 赛事直播延迟忽略不计, 真正做到全球同步。</p>
+            </div>
+            <div class="product-card" data-url="#ai">
+                <div class="product-icon">🧠</div>
+                <h3>AI 训练平台</h3>
+                <p>一键托管您在健身房的训练数据, 自动完成模型训练, 分析您的锻炼情况, 提出个性化建议。</p>
+            </div>
+            <div class="product-card" data-url="#edge">
+                <div class="product-icon">🌐</div>
+                <h3>边缘加速网络</h3>
+                <p>全球 200+ POP 节点，智能路由与缓存，让您不再错过任何一场赛事。</p>
+            </div>
+            <div class="product-card" data-url="#security">
+                <div class="product-icon">🔒</div>
+                <h3>企业级安全</h3>
+                <p>零信任架构、国密算法支持、等保三级、ISO 27001 全栈合规, 您的数据不再泄露。</p>
+            </div>
+            <div class="product-card" data-url="#data">
+                <div class="product-icon">📊</div>
+                <h3>实时数据湖</h3>
+                <p>PB 级流式入湖、亚秒级查询，内置 AI 洞察与预测模型。</p>
+            </div>
+            <div class="product-card" data-url="#dev">
+                <div class="product-icon">⚙️</div>
+                <h3>开发者工具链</h3>
+                <p>本平台全面开源, 技术共享, 可用CLI、VS Code 插件、GitHub Actions 无缝集成，十分钟完成 CI/CD。</p>
+
+            </div>
+            <div class="product-card" data-url="#dev">
+                <div class="product-icon">🎿</div>
+                <h3>体育装备官方直营</h3>
+                <p>官方合作伙伴, 提供超多一线新品装备, 一手货源直击底价, 订阅即送正品体育装备。</p>
+            </div>
+            <div class="product-card" data-url="#dev">
+                <div class="product-icon">🏸</div>
+                <h3>一线明星代言</h3>
+                <p>NBA巨星坐镇, 粉丝见面会官方预约平台, 更有林丹、杨晨等一线大咖与您互动。</p>
+            </div>
+
+        </section>
+
+        <!-- AI赋能 悬停翻转分界栏 -->
+        <section class="cool-section">
+            <h2 class="cool-title">AI 赋能 · 运动无界</h2>
+
+            <div class="cool-grid">
+                <div class="cool-card">
+                    <div class="cool-card__inner">
+                        <div class="cool-card__front">⚽</div>
+                        <div class="cool-card__back">
+                            <h3>足球频道</h3>
+                            <p>72 国赛事实时同步</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cool-card">
+                    <div class="cool-card__inner">
+                        <div class="cool-card__front">🏀</div>
+                        <div class="cool-card__back">
+                            <h3>篮球频道</h3>
+                            <p>全球顶级联赛全覆盖</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cool-card">
+                    <div class="cool-card__inner">
+                        <div class="cool-card__front">🏋</div>
+                        <div class="cool-card__back">
+                            <h3>AI 健身</h3>
+                            <p>你的私人训练专家</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 评论区title -->
+        <div class="charts">
+            <h2 class="section-title" data-text="用户评论">用户评论</h2>
+        </div>
+
+        <!-- 评论区 -->
+        <div class="comments-container">
+            <div class="comments-slider">
+                <div class="comment-item"><strong>lenghung</strong>：这是一款非常棒的产品，体育爱好者的福音！</div>
+                <div class="comment-item"><strong>用户57829</strong>：功能强大，界面美观。</div>
+                <div class="comment-item"><strong>进击的超人</strong>：先说网站吧，非常喜欢这个设计，更不谈其中的一些功能，简直是锦上添花。</div>
+                <div class="comment-item">
+                    <strong>用户97722</strong>：这款产品太棒了！功能强大，操作简单，界面美观，用起来非常顺手，给我的生活和工作带来了很大的便利，真心推荐给大家。
+                </div>
+                <div class="comment-item"><strong>翻盖的麋鹿</strong>：产品的设计太人性化了，细节处理得非常好，质量也特别可靠，用着很放心，超出我的预期，赞一个！</div>
+                <div class="comment-item"><strong>雷诺奥特曼</strong>：买了这个产品后，感觉生活都变得美好了。性能强劲，稳定性高，客服也很热情，遇到问题都能及时解决，太满意了。
+                </div>
+                <div class="comment-item"><strong>用户32779</strong>：产品性能出色，性价比超高，完全超出了我的期望。无论是外观还是实用性，都无可挑剔，真心值得购买。</div>
+                <div class="comment-item">
+                    <strong>Kalvenny</strong>：这个产品真的太好用了，功能齐全，操作便捷，给我的生活带来了极大的便利，非常感谢研发团队，期待后续更多优秀产品。
+                </div>
+                <div class="comment-item"><strong>lisi</strong>：界面美观，操作便捷，让运动管理变得轻松又高效，爱了！</div>
+                <div class="comment-item"><strong>Charlie789</strong>：从功能到设计，都无可挑剔，为体育爱好者量身打造的好产品！</div>
+                <div class="comment-item"><strong>Nancy1111</strong>：功能强大，数据精准，让运动管理变得轻松又高效，推荐！</div>
+                <div class="comment-item"><strong>铠甲勇士天天</strong>：性价比超高，功能丰富，完全满足了我的运动需求，太棒了！</div>
+                <div class="comment-item"><strong>用户63888</strong>：作为一名足球狂热者，我非常喜欢这个！</div>
+                <!-- 更多评论 -->
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="搜索评论...">
+                <button type="button">🔎</button>
+            </div>
+        </div>
+
+        <!-- 数据分析区（三张图） -->
+        <div class="charts">
+            <h2 class="section-title" data-text="数据洞察">数据洞察</h2>
+        </div>
+
+        <section class="data-analysis">
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3 class="chart-title">全球流量分布</h3>
+                    <canvas id="trafficChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3 class="chart-title">近期赛事人气</h3>
+                    <canvas id="performanceChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3 class="chart-title">明星代言激励</h3>
+                    <canvas id="efficiencyChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- 底部悬浮栏中符号 -->
+        <div class="float-bar-2">
+            <button class="action-2">⚙️</button>
+            <button class="action-2">🔒</button>
+            <button class="cta-button-2">▶️</button>
+        </div>
+
+        <!-- 底部黑域 -->
+        <footer class="gl-footer">
+            <div class="gl-footer__wrap">
+                <!-- 左侧公司信息 -->
+                <div class="gl-footer__left">
+                    <!-- 这里可以替换成做好的LOGO 替换下面的logo部分 -->
+                    <!-- <img class="gl-footer__logo", src="https://dummyimage.com/120x40/fff/000&text=LOGO", alt="Company Logo"> -->
+
+                    <div class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span>HuaCheng-Tec</span>
+                    </div>
+
+                    <p class="gl-footer__desc">
+                        · 大型体育全频道集成平台<br>
+                        · 覆盖 72 个国家<br>
+                        · 全球影响力最大论坛<br>
+                        · AI 健身指导专家
+                    </p>
+                </div>
+
+                <!-- 右侧选项 -->
+                <nav class="gl-footer__nav">
+                    <a href="#">关于我们</a>
+                    <a href="#">加入我们</a>
+                    <a href="#">商务合作</a>
+                    <a href="#">隐私政策</a>
+                    <a href="#">服务条款</a>
+                </nav>
+            </div>
+
+            <!-- 版权行 -->
+            <div class="gl-footer__copy">
+                © 2025 HuaCheng-Tec · All Rights Reserved
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="HuaCheng-Tec-test.js"></script>
+
+</body>
+
+</html>
